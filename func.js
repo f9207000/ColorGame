@@ -18,7 +18,16 @@ resetButton.addEventListener('click', function(e){
     resetPage();
 })
 window.onload = function() {
+    if(isMobile())
+        document.documentElement().style.fontSize = '8px';
     resetPage();
+}
+function isMobile() {
+    try{ 
+        document.createEvent("TouchEvent"); return true;
+    } catch(e){ 
+        return false;
+    }
 }
 function resetPage(){
     setColor = changeColor(randomRGB());
