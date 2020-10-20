@@ -19,7 +19,7 @@ resetButton.addEventListener('click', function(e){
 })
 window.onload = function() {
     if(isMobile())
-        document.documentElement().style.fontSize = '8px';
+        document.documentElement().style.fontSize = 'px';
     resetPage();
 }
 function isMobile() {
